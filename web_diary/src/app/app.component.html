@@ -1,0 +1,30 @@
+
+<main [class.background_love]="check_love">
+    <div class="heading">
+        <div class="love">
+            <input id="switch" type="checkbox" (change)="on_check_love($event)">
+            <label class="love-heart" for="switch">
+            <i class="left"></i>
+            <i class="right"></i>
+            <i class="bottom"></i>
+            <div class="round"></div>
+            </label>
+        </div>
+    </div>
+    <div class="box-input">
+        <div class="border">
+            <input [(ngModel)]="noi_dung" type="text" name="text" class="input" placeholder="Tiêu gì?">
+        </div>
+    </div>
+    <div class="box-input">
+        <div class="border">
+            <input [(ngModel)]="so_xien" type="number" name="text" class="input" placeholder="Nhiêu xiền?">
+        </div>
+    </div>
+    <button class="btn_luu" (click)="luu_click()">Lưu</button>
+
+</main>
+
+
+
+<router-outlet/>
